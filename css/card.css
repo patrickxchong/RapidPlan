@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700");
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  text-align: center;
+  margin: 30px auto;
+}
+#app {
+  padding: 20px;
+}
+.card {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.8em;
+  border-radius: 15px;
+  margin: 10px;
+  background: #ddd;
+  text-align: left;
+  box-shadow: 0px 5px 20px -10px #111111;
+  position: relative;
+  transition: 0.4s;
+  max-width: 200px;
+}
+.card__caption {
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 0.7em;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+}
+.card__image-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1em 1em 0;
+  border-radius: 3px 3px 0 0;
+}
+.card__type {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  padding: 0.25em;
+  line-height: 1;
+  border-radius: 2px;
+  background: #bbbbbb;
+}
+.card__label {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 3px;
+}
+.card__name {
+  font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.card__stats {
+  font-size: 0.7em;
+  margin: 1em 0;
+  width: 100%;
+}
+.card__stats th {
+  font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.card__stats th,
+.card__stats td {
+  width: 50%;
+  padding: 0.25em 0.5em 0;
+}
+.card__abilities {
+  display: flex;
+  justify-content: space-between;
+}
+.card__ability {
+  margin-top: 1em;
+  flex: 1 0;
+}
+.card--normal {
+  background: linear-gradient(110deg, #fdbb2d 0%, #3a1c71 100%);
+  box-shadow: 0px 5px 20px -10px #3a1c71;
+}
+.card--normal .card__type {
+  background-color: #c08a53;
+}
+.card--water {
+  background: linear-gradient(120deg, #1cb5e0 0%, #000851 100%);
+  box-shadow: 0px 5px 20px -10px #000851;
+}
+.card--water .card__type {
+  background-color: #1cb5e0;
+}
+.card--electric {
+  background: linear-gradient(90deg, #ffde00 34%, #e8ff99 83%);
+}
+.card--electric .card__type {
+  background-color: #000;
+}
+.card--fire {
+  background: linear-gradient(0deg, #c71800 10%, #fcc245 100%);
+}
+.card--fire .card__type {
+  background-color: #c71800;
+}
+.card--psychic {
+  background: linear-gradient(140deg, #ffa7f9 0%, #ff2cc3 39%, #ffe3a7 100%);
+}
+.card--psychic .card__type {
+  background: #ff2cc3;
+}
+.card--dark {
+  background: linear-gradient(20deg, #191919 0%, #100b32 33%, #5c0249 100%);
+}
+.card--dark .card__type {
+  background: #5c0249;
+}
+.card--grass {
+  background: linear-gradient(140deg, #c4da3d 0%, #6e7f0e 69%, #275009 100%);
+}
+.card--grass .card__type {
+  background: #6e7f0e;
+}
+.card--ice {
+  background: linear-gradient(230deg, #caeaf6 0%, #a0eaf1 46%, #6fb8eb 100%);
+}
+.card--ice .card__type {
+  background: #6fb8eb;
+}
+.card--fairy {
+  background: linear-gradient(
+    45deg,
+    #ffe6f0 0%,
+    #ffc5e0 34%,
+    #ffa6b9 71%,
+    #ff8a95 100%
+  );
+}
+.card--fairy .card__type {
+  background: #ff8a95;
+}
+.card:nth-child(1) {
+  -webkit-transform: translateY(0px) rotate(-5deg);
+  transform: translateY(0px) rotate(-5deg);
+}
+.card:nth-child(2) {
+  -webkit-transform: translateY(0px) rotate(-2deg);
+  transform: translateY(0px) rotate(-2deg);
+}
+.card:nth-child(3) {
+  -webkit-transform: translateY(0px) rotate(0deg);
+  transform: translateY(0px) rotate(0deg);
+}
+.card:nth-child(4) {
+  -webkit-transform: translateY(0px) rotate(-4deg);
+  transform: translateY(0px) rotate(-4deg);
+}
+.card:nth-child(5) {
+  -webkit-transform: translateY(0px) rotate(-3deg);
+  transform: translateY(0px) rotate(-3deg);
+}
+.card:nth-child(6) {
+  -webkit-transform: translateY(0px) rotate(-4deg);
+  transform: translateY(0px) rotate(-4deg);
+}
+.card:nth-child(7) {
+  -webkit-transform: translateY(0px) rotate(-1deg);
+  transform: translateY(0px) rotate(-1deg);
+}
+.card:nth-child(8) {
+  -webkit-transform: translateY(0px) rotate(-2deg);
+  transform: translateY(0px) rotate(-2deg);
+}
+.card:nth-child(9) {
+  -webkit-transform: translateY(0px) rotate(-2deg);
+  transform: translateY(0px) rotate(-2deg);
+}
+.card:hover {
+  z-index: 5;
+  box-shadow: 0px 13px 30px -15px #000000;
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
