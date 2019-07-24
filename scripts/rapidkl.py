@@ -40,7 +40,7 @@ for src in stations:
             result[src][dest] = response_json
 
 with open('result.json', 'w') as fp:
-    json.dump(result, fp)
+    json.dump(result, fp, indent=4)
     
 # dir_path = os.path.dirname(os.path.realpath(__file__))
 # WriteDictToCSV(dir_path + '/lkm.csv', response_json[0].keys(), response_json)

@@ -42,8 +42,11 @@ $(document).ready(function(e) {
           break;
         }
       }
-      if (to.length > 4 || from.length > 4) {
-        throw "Location not found :(";
+      if (to.length > 5) {
+        throw `${to} Location not found :(`;
+      }
+      if (from.length > 5) {
+        throw `${from} not found :(`;
       }
 
       itemsArray.unshift({ to, from });
@@ -83,11 +86,11 @@ function updateCards() {
     <section>
       ${itemsArray
         .map((item, idx) => {
-          let price;
+          let trip;
           if (item["from"] < item["to"]) {
-            price = data[item["from"]][item["to"]];
+            trip = data[item["from"]][item["to"]];
           } else {
-            price = data[item["to"]][item["from"]];
+            trip = data[item["to"]][item["from"]];
           }
           return `
         <figure class="card ${color[idx]}">
@@ -102,29 +105,36 @@ function updateCards() {
           <h1 class="card__name">
           ${item["to"] + ": " + data[item["to"]]["name"]}
           </h1>
-                
+          ${
+            trip["duration"]
+              ? `<h3 class="card__type">
+            ${trip["duration"]} mins
+          </h3>`
+              : ""
+          }
+          
           <table class="card__stats">
             <tbody><tr>
               <th>Cashless</th>
-              <td>RM ${price["fares"]["cashless"]}</td>
+              <td>RM ${trip["fares"]["cashless"]}</td>
             </tr>
             <tr>
               <th>Monthly</th>
-              <td>RM ${price["fares"]["monthly"]}</td>
+              <td>RM ${trip["fares"]["monthly"]}</td>
             </tr>
             
             <tr>
               <th>Weekly</th>
-              <td>RM ${price["fares"]["weekly"]}</td>
+              <td>RM ${trip["fares"]["weekly"]}</td>
             </tr>
       
             <tr>
               <th>Cash</th>
-              <td>RM ${price["fares"]["cash"]}</td>
+              <td>RM ${trip["fares"]["cash"]}</td>
             </tr>
             <tr>
               <th>Concession</th>
-              <td>RM ${price["fares"]["consession"]}</td>
+              <td>RM ${trip["fares"]["consession"]}</td>
             </tr>
           </tbody></table>
         </figcaption>

@@ -34,10 +34,10 @@ body {
 }
 .card__type {
   position: absolute;
-  top: 0;
-  right: 1em;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: -1.6em;
+  right: -2em;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
   color: #ffffff;
   text-transform: uppercase;
   font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
