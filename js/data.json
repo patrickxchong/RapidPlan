@@ -1,7 +1,9 @@
 {
     "S81": {
         "line": "Sri Petaling Line/Kelana Jaya Line",
-        "name": "PUTRA HEIGHTS LRT STATION"
+        "name": "PUTRA HEIGHTS LRT STATION",
+        "lat": 2.9962430000305176,
+        "lon": 101.57546997070312
     },
     "S79": {
         "S81": {
@@ -14,7 +16,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "PUCHONG PRIMA LRT STATION"
+        "name": "PUCHONG PRIMA LRT STATION",
+        "lat": 2.9998390674591064,
+        "lon": 101.59671783447266
     },
     "S78": {
         "S79": {
@@ -36,7 +40,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "PUCHONG PERDANA LRT STATION"
+        "name": "PUCHONG PERDANA LRT STATION",
+        "lat": 3.007838010787964,
+        "lon": 101.60529327392578
     },
     "S77": {
         "S78": {
@@ -67,7 +73,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "BANDAR PUTERI LRT STATION"
+        "name": "BANDAR PUTERI LRT STATION",
+        "lat": 3.0170459747314453,
+        "lon": 101.61282348632812
     },
     "S76": {
         "S77": {
@@ -107,7 +115,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "TAMAN PERINDUSTRIAN PUCHONG LRT STATION"
+        "name": "TAMAN PERINDUSTRIAN PUCHONG LRT STATION",
+        "lat": 3.0228519439697266,
+        "lon": 101.61344146728516
     },
     "S75": {
         "S76": {
@@ -156,7 +166,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "PUSAT BANDAR PUCHONG LRT STATION"
+        "name": "PUSAT BANDAR PUCHONG LRT STATION",
+        "lat": 3.0333170890808105,
+        "lon": 101.6161117553711
     },
     "S74": {
         "S75": {
@@ -214,7 +226,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "IOI PUCHONG JAYA LRT STATION"
+        "name": "IOI PUCHONG JAYA LRT STATION",
+        "lat": 3.0478010177612305,
+        "lon": 101.62080383300781
     },
     "S72": {
         "S74": {
@@ -281,7 +295,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "KINRARA LRT STATION"
+        "name": "KINRARA LRT STATION",
+        "lat": 3.050671100616455,
+        "lon": 101.64442443847656
     },
     "S71": {
         "S72": {
@@ -357,7 +373,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "ALAM SUTERA LRT STATION"
+        "name": "ALAM SUTERA LRT STATION",
+        "lat": 3.054802894592285,
+        "lon": 101.65638732910156
     },
     "S70": {
         "S71": {
@@ -442,7 +460,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "MUHIBBAH LRT STATION"
+        "name": "MUHIBBAH LRT STATION",
+        "lat": 3.0619471073150635,
+        "lon": 101.66260528564453
     },
     "S69": {
         "S70": {
@@ -536,7 +556,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "AWAN BESAR LRT STATION"
+        "name": "AWAN BESAR LRT STATION",
+        "lat": 3.0620288848876953,
+        "lon": 101.67066955566406
     },
     "S68": {
         "S69": {
@@ -639,7 +661,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "SRI PETALING LRT STATION"
+        "name": "SRI PETALING LRT STATION",
+        "lat": 3.061126947402954,
+        "lon": 101.68714904785156
     },
     "S67": {
         "S68": {
@@ -751,7 +775,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "BUKIT JALIL LRT STATION"
+        "name": "BUKIT JALIL LRT STATION",
+        "lat": 3.058079957962036,
+        "lon": 101.692138671875
     },
     "S65": {
         "S67": {
@@ -872,7 +898,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "SUNGAI BESI LRT STATION"
+        "name": "SUNGAI BESI LRT STATION",
+        "lat": 3.063999891281128,
+        "lon": 101.7080307006836
     },
     "S64": {
         "S65": {
@@ -1002,7 +1030,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "BANDAR TASIK SELATAN LRT STATION"
+        "name": "BANDAR TASIK SELATAN LRT STATION",
+        "lat": 3.0760679244995117,
+        "lon": 101.7114486694336
     },
     "S63": {
         "S64": {
@@ -1141,7 +1171,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "BANDAR TUN RAZAK LRT STATION"
+        "name": "BANDAR TUN RAZAK LRT STATION",
+        "lat": 3.0895800590515137,
+        "lon": 101.71244812011719
     },
     "S62": {
         "S63": {
@@ -1289,7 +1321,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "SALAK SELATAN LRT STATION"
+        "name": "SALAK SELATAN LRT STATION",
+        "lat": 3.102099895477295,
+        "lon": 101.70632934570312
     },
     "S61": {
         "S62": {
@@ -1446,7 +1480,9 @@
             }
         },
         "line": "Sri Petaling Line",
-        "name": "CHERAS LRT STATION"
+        "name": "CHERAS LRT STATION",
+        "lat": 3.112679958343506,
+        "lon": 101.71431732177734
     },
     "S18": {
         "S61": {
@@ -1612,7 +1648,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "SENTUL TIMUR LRT STATION"
+        "name": "SENTUL TIMUR LRT STATION",
+        "lat": 3.1858739852905273,
+        "lon": 101.69534301757812
     },
     "S17": {
         "S18": {
@@ -1787,7 +1825,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "SENTUL LRT STATION"
+        "name": "SENTUL LRT STATION",
+        "lat": 3.1785800457000732,
+        "lon": 101.6955337524414
     },
     "S16": {
         "S17": {
@@ -1971,7 +2011,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "TITIWANGSA LRT STATION"
+        "name": "TITIWANGSA LRT STATION",
+        "lat": 3.173460006713867,
+        "lon": 101.69535827636719
     },
     "S15": {
         "S16": {
@@ -2164,7 +2206,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "PWTC LRT STATION"
+        "name": "PWTC LRT STATION",
+        "lat": 3.1665399074554443,
+        "lon": 101.69364929199219
     },
     "S14": {
         "S15": {
@@ -2366,7 +2410,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "SULTAN ISMAIL LRT STATION"
+        "name": "SULTAN ISMAIL LRT STATION",
+        "lat": 3.161180019378662,
+        "lon": 101.69407653808594
     },
     "S13": {
         "S14": {
@@ -2577,7 +2623,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "BANDARAYA LRT STATION"
+        "name": "BANDARAYA LRT STATION",
+        "lat": 3.1554999351501465,
+        "lon": 101.69445037841797
     },
     "S12": {
         "S13": {
@@ -2797,7 +2845,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line/Kelana Jaya Line",
-        "name": "MASJID JAMEK LRT STATION"
+        "name": "MASJID JAMEK LRT STATION",
+        "lat": 3.1491849422454834,
+        "lon": 101.69640350341797
     },
     "S11": {
         "S12": {
@@ -3026,7 +3076,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "PLAZA RAKYAT LRT STATION"
+        "name": "PLAZA RAKYAT LRT STATION",
+        "lat": 3.1439900398254395,
+        "lon": 101.70218658447266
     },
     "S10": {
         "S11": {
@@ -3264,7 +3316,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "HANG TUAH LRT STATION"
+        "name": "HANG TUAH LRT STATION",
+        "lat": 3.140122890472412,
+        "lon": 101.70586395263672
     },
     "S09": {
         "S10": {
@@ -3511,7 +3565,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "PUDU LRT STATION"
+        "name": "PUDU LRT STATION",
+        "lat": 3.134850025177002,
+        "lon": 101.7120132446289
     },
     "S08": {
         "S09": {
@@ -3767,7 +3823,9 @@
             }
         },
         "line": "Ampang Line/Sri Petaling Line",
-        "name": "CHAN SOW LIN LRT STATION"
+        "name": "CHAN SOW LIN LRT STATION",
+        "lat": 3.127919912338257,
+        "lon": 101.71562194824219
     },
     "S07": {
         "S08": {
@@ -4032,7 +4090,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "MIHARJA LRT STATION"
+        "name": "MIHARJA LRT STATION",
+        "lat": 3.1210999488830566,
+        "lon": 101.71790313720703
     },
     "S06": {
         "S07": {
@@ -4306,7 +4366,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "MALURI LRT STATION"
+        "name": "MALURI LRT STATION",
+        "lat": 3.1233580112457275,
+        "lon": 101.72699737548828
     },
     "S05": {
         "S06": {
@@ -4589,7 +4651,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "PANDAN JAYA LRT STATION"
+        "name": "PANDAN JAYA LRT STATION",
+        "lat": 3.1301889419555664,
+        "lon": 101.73915100097656
     },
     "S04": {
         "S05": {
@@ -4881,7 +4945,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "PANDAN INDAH LRT STATION"
+        "name": "PANDAN INDAH LRT STATION",
+        "lat": 3.1348469257354736,
+        "lon": 101.74663543701172
     },
     "S03": {
         "S04": {
@@ -5182,7 +5248,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "CEMPAKA LRT STATION"
+        "name": "CEMPAKA LRT STATION",
+        "lat": 3.138439893722534,
+        "lon": 101.75318908691406
     },
     "S02": {
         "S03": {
@@ -5492,7 +5560,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "CAHAYA LRT STATION"
+        "name": "CAHAYA LRT STATION",
+        "lat": 3.14057993888855,
+        "lon": 101.75676727294922
     },
     "S01": {
         "S02": {
@@ -5811,7 +5881,9 @@
             }
         },
         "line": "Ampang Line",
-        "name": "AMPANG LRT STATION"
+        "name": "AMPANG LRT STATION",
+        "lat": 3.15051007270813,
+        "lon": 101.76026153564453
     },
     "MRT9": {
         "S01": {
@@ -6139,7 +6211,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TTDI MRT STATION"
+        "name": "TTDI MRT STATION",
+        "lat": 3.1361300945281982,
+        "lon": 101.63053894042969
     },
     "MRT8": {
         "MRT9": {
@@ -6476,7 +6550,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "BANDAR UTAMA MRT STATION"
+        "name": "BANDAR UTAMA MRT STATION",
+        "lat": 3.14670991897583,
+        "lon": 101.61859893798828
     },
     "MRT7": {
         "MRT8": {
@@ -6822,7 +6898,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "MUTIARA DAMANSARA MRT STATION"
+        "name": "MUTIARA DAMANSARA MRT STATION",
+        "lat": 3.155301094055176,
+        "lon": 101.60907745361328
     },
     "MRT6": {
         "MRT7": {
@@ -7177,7 +7255,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "SURIAN MRT STATION"
+        "name": "SURIAN MRT STATION",
+        "lat": 3.149480104446411,
+        "lon": 101.59392547607422
     },
     "MRT5": {
         "MRT6": {
@@ -7541,7 +7621,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "KOTA DAMANSARA MRT STATION"
+        "name": "KOTA DAMANSARA MRT STATION",
+        "lat": 3.1501340866088867,
+        "lon": 101.57868957519531
     },
     "MRT4": {
         "MRT5": {
@@ -7914,7 +7996,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "KWASA SENTRAL MRT STATION"
+        "name": "KWASA SENTRAL MRT STATION",
+        "lat": 3.170111894607544,
+        "lon": 101.56465148925781
     },
     "MRT31": {
         "MRT4": {
@@ -8296,7 +8380,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "KAJANG MRT STATION"
+        "name": "KAJANG MRT STATION",
+        "lat": 2.982841968536377,
+        "lon": 101.79019927978516
     },
     "MRT30": {
         "MRT31": {
@@ -8687,7 +8773,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "STADIUM KAJANG MRT STATION"
+        "name": "STADIUM KAJANG MRT STATION",
+        "lat": 2.9938549995422363,
+        "lon": 101.78611755371094
     },
     "MRT3": {
         "MRT30": {
@@ -9087,7 +9175,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "KWASA DAMANSARA MRT STATION"
+        "name": "KWASA DAMANSARA MRT STATION",
+        "lat": 3.1761460304260254,
+        "lon": 101.57205200195312
     },
     "MRT29": {
         "MRT3": {
@@ -9496,7 +9586,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "SUNGAI JERNIH MRT STATION"
+        "name": "SUNGAI JERNIH MRT STATION",
+        "lat": 3.0011000633239746,
+        "lon": 101.78400421142578
     },
     "MRT28": {
         "MRT29": {
@@ -9914,7 +10006,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "BUKIT DUKUNG MRT STATION"
+        "name": "BUKIT DUKUNG MRT STATION",
+        "lat": 3.0265419483184814,
+        "lon": 101.77114868164062
     },
     "MRT27": {
         "MRT28": {
@@ -10341,7 +10435,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "BATU 11 CHERAS MRT STATION"
+        "name": "BATU 11 CHERAS MRT STATION",
+        "lat": 3.0414469242095947,
+        "lon": 101.7732925415039
     },
     "MRT26": {
         "MRT27": {
@@ -10777,7 +10873,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "BANDAR TUN HUSSIEN ONN MRT STATION"
+        "name": "BANDAR TUN HUSSIEN ONN MRT STATION",
+        "lat": 3.0483579635620117,
+        "lon": 101.77499389648438
     },
     "MRT25": {
         "MRT26": {
@@ -11222,7 +11320,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "SRI RAYA MRT STATION"
+        "name": "SRI RAYA MRT STATION",
+        "lat": 3.0619730949401855,
+        "lon": 101.77320861816406
     },
     "MRT24": {
         "MRT25": {
@@ -11676,7 +11776,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TAMAN SUNTEX MRT STATION"
+        "name": "TAMAN SUNTEX MRT STATION",
+        "lat": 3.0715579986572266,
+        "lon": 101.76376342773438
     },
     "MRT23": {
         "MRT24": {
@@ -12139,7 +12241,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TAMAN CONNAUGHT MRT STATION"
+        "name": "TAMAN CONNAUGHT MRT STATION",
+        "lat": 3.079335927963257,
+        "lon": 101.74475860595703
     },
     "MRT22": {
         "MRT23": {
@@ -12611,7 +12715,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TAMAN MUTIARA MRT STATION"
+        "name": "TAMAN MUTIARA MRT STATION",
+        "lat": 3.0913848876953125,
+        "lon": 101.74017333984375
     },
     "MRT21": {
         "MRT22": {
@@ -13092,7 +13198,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TAMAN MIDAH MRT STATION"
+        "name": "TAMAN MIDAH MRT STATION",
+        "lat": 3.1045188903808594,
+        "lon": 101.73229217529297
     },
     "MRT20": {
         "MRT21": {
@@ -13582,7 +13690,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TAMAN PERTAMA MRT STATION"
+        "name": "TAMAN PERTAMA MRT STATION",
+        "lat": 3.112755060195923,
+        "lon": 101.7293701171875
     },
     "MRT2": {
         "MRT20": {
@@ -14081,7 +14191,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "KAMPUNG SELAMAT MRT STATION"
+        "name": "KAMPUNG SELAMAT MRT STATION",
+        "lat": 3.197266101837158,
+        "lon": 101.57849884033203
     },
     "MRT19": {
         "MRT2": {
@@ -14589,7 +14701,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "MALURI MRT STATION"
+        "name": "MALURI MRT STATION",
+        "lat": 3.1239609718322754,
+        "lon": 101.7276382446289
     },
     "MRT18": {
         "MRT19": {
@@ -15106,7 +15220,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "COCHRANE MRT STATION"
+        "name": "COCHRANE MRT STATION",
+        "lat": 3.132499933242798,
+        "lon": 101.72297668457031
     },
     "MRT17": {
         "MRT18": {
@@ -15632,7 +15748,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "TUN RAZAK EXCHANGE MRT STATION"
+        "name": "TUN RAZAK EXCHANGE MRT STATION",
+        "lat": 3.1428279876708984,
+        "lon": 101.7198715209961
     },
     "MRT16": {
         "MRT17": {
@@ -16167,7 +16285,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "BUKIT BINTANG MRT STATION"
+        "name": "BUKIT BINTANG MRT STATION",
+        "lat": 3.146182060241699,
+        "lon": 101.71077728271484
     },
     "MRT15": {
         "MRT16": {
@@ -16711,7 +16831,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "MERDEKA MRT STATION"
+        "name": "MERDEKA MRT STATION",
+        "lat": 3.1422269344329834,
+        "lon": 101.70184326171875
     },
     "MRT14": {
         "MRT15": {
@@ -17264,7 +17386,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "PASAR SENI MRT STATION"
+        "name": "PASAR SENI MRT STATION",
+        "lat": 3.1425390243530273,
+        "lon": 101.6961441040039
     },
     "MRT13": {
         "MRT14": {
@@ -17826,7 +17950,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "MUZIUM NEGARA MRT STATION"
+        "name": "MUZIUM NEGARA MRT STATION",
+        "lat": 3.137356996536255,
+        "lon": 101.68709564208984
     },
     "MRT12": {
         "MRT13": {
@@ -18397,7 +18523,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "SEMANTAN MRT STATION"
+        "name": "SEMANTAN MRT STATION",
+        "lat": 3.1509768962860107,
+        "lon": 101.66549682617188
     },
     "MRT11": {
         "MRT12": {
@@ -18977,7 +19105,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "PUSAT BANDAR DAMANSARA MRT STATION"
+        "name": "PUSAT BANDAR DAMANSARA MRT STATION",
+        "lat": 3.143444061279297,
+        "lon": 101.66285705566406
     },
     "MRT10": {
         "MRT11": {
@@ -19566,7 +19696,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "PHILEO DAMANSARA MRT STATION"
+        "name": "PHILEO DAMANSARA MRT STATION",
+        "lat": 3.129863977432251,
+        "lon": 101.64247131347656
     },
     "MRT1": {
         "MRT10": {
@@ -20164,7 +20296,9 @@
             }
         },
         "line": "Sungai Buloh-Kajang",
-        "name": "SUNGAI BULOH MRT STATION"
+        "name": "SUNGAI BULOH MRT STATION",
+        "lat": 3.2064290046691895,
+        "lon": 101.58177947998047
     },
     "MR9": {
         "MRT1": {
@@ -20771,7 +20905,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "MEDAN TUANKU MONORAIL STATION"
+        "name": "MEDAN TUANKU MONORAIL STATION",
+        "lat": 3.159281015396118,
+        "lon": 101.69890594482422
     },
     "MR8": {
         "MR9": {
@@ -21387,7 +21523,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "BUKIT NANAS MONORAIL STATION"
+        "name": "BUKIT NANAS MONORAIL STATION",
+        "lat": 3.1562399864196777,
+        "lon": 101.70484924316406
     },
     "MR7": {
         "MR8": {
@@ -22012,7 +22150,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "RAJA CHULAN MONORAIL STATION"
+        "name": "RAJA CHULAN MONORAIL STATION",
+        "lat": 3.1508960723876953,
+        "lon": 101.71040344238281
     },
     "MR6": {
         "MR7": {
@@ -22646,7 +22786,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "BUKIT BINTANG MONORAIL STATION"
+        "name": "BUKIT BINTANG MONORAIL STATION",
+        "lat": 3.1459579467773438,
+        "lon": 101.71154022216797
     },
     "MR5": {
         "MR6": {
@@ -23289,7 +23431,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "IMBI MONORAIL STATION"
+        "name": "IMBI MONORAIL STATION",
+        "lat": 3.142836093902588,
+        "lon": 101.70941925048828
     },
     "MR4": {
         "MR5": {
@@ -23941,7 +24085,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "HANG TUAH MONORAIL STATION"
+        "name": "HANG TUAH MONORAIL STATION",
+        "lat": 3.1407299041748047,
+        "lon": 101.7060317993164
     },
     "MR3": {
         "MR4": {
@@ -24602,7 +24748,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "MAHARAJALELA MONORAIL STATION"
+        "name": "MAHARAJALELA MONORAIL STATION",
+        "lat": 3.1390249729156494,
+        "lon": 101.69918823242188
     },
     "MR2": {
         "MR3": {
@@ -25272,7 +25420,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "TUN SAMBANTHAN MONORAIL STATION"
+        "name": "TUN SAMBANTHAN MONORAIL STATION",
+        "lat": 3.1314079761505127,
+        "lon": 101.69091796875
     },
     "MR11": {
         "MR2": {
@@ -25951,7 +26101,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "TITIWANGSA MONORAIL STATION"
+        "name": "TITIWANGSA MONORAIL STATION",
+        "lat": 3.173151969909668,
+        "lon": 101.69580841064453
     },
     "MR10": {
         "MR11": {
@@ -26639,7 +26791,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "CHOW KIT MONORAIL STATION"
+        "name": "CHOW KIT MONORAIL STATION",
+        "lat": 3.167567014694214,
+        "lon": 101.69844055175781
     },
     "MR1": {
         "MR10": {
@@ -27336,7 +27490,9 @@
             }
         },
         "line": "KL Monorail Line",
-        "name": "KL SENTRAL MONORAIL STATION"
+        "name": "KL SENTRAL MONORAIL STATION",
+        "lat": 3.132852077484131,
+        "lon": 101.68782043457031
     },
     "KJ9": {
         "MR1": {
@@ -28042,7 +28198,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "AMPANG PARK LRT STATION"
+        "name": "AMPANG PARK LRT STATION",
+        "lat": 3.1599810123443604,
+        "lon": 101.71900177001953
     },
     "KJ8": {
         "KJ9": {
@@ -28757,7 +28915,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "DAMAI LRT STATION"
+        "name": "DAMAI LRT STATION",
+        "lat": 3.1645359992980957,
+        "lon": 101.72438049316406
     },
     "KJ7": {
         "KJ8": {
@@ -29481,7 +29641,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "DATO' KERAMAT LRT STATION"
+        "name": "DATO' KERAMAT LRT STATION",
+        "lat": 3.1652369499206543,
+        "lon": 101.73193359375
     },
     "KJ6": {
         "KJ7": {
@@ -30214,7 +30376,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "JELATEK LRT STATION"
+        "name": "JELATEK LRT STATION",
+        "lat": 3.167504072189331,
+        "lon": 101.7352523803711
     },
     "KJ5": {
         "KJ6": {
@@ -30956,7 +31120,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "SETIAWANGSA LRT STATION"
+        "name": "SETIAWANGSA LRT STATION",
+        "lat": 3.175642967224121,
+        "lon": 101.73577880859375
     },
     "KJ4": {
         "KJ5": {
@@ -31707,7 +31873,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "SRI RAMPAI LRT STATION"
+        "name": "SRI RAMPAI LRT STATION",
+        "lat": 3.1989428997039795,
+        "lon": 101.7374267578125
     },
     "KJ36": {
         "KJ4": {
@@ -32467,7 +32635,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "SUBANG ALAM LRT STATION"
+        "name": "SUBANG ALAM LRT STATION",
+        "lat": 3.0094211101531982,
+        "lon": 101.57228088378906
     },
     "KJ35": {
         "KJ36": {
@@ -33236,7 +33406,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "ALAM MEGAH LRT STATION"
+        "name": "ALAM MEGAH LRT STATION",
+        "lat": 3.02315092086792,
+        "lon": 101.57202911376953
     },
     "KJ34": {
         "KJ35": {
@@ -34014,7 +34186,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "USJ21 LRT STATION"
+        "name": "USJ21 LRT STATION",
+        "lat": 3.029881000518799,
+        "lon": 101.58171081542969
     },
     "KJ33": {
         "KJ34": {
@@ -34801,7 +34975,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "WAWASAN LRT STATION"
+        "name": "WAWASAN LRT STATION",
+        "lat": 3.035062074661255,
+        "lon": 101.58834838867188
     },
     "KJ32": {
         "KJ33": {
@@ -35597,7 +35773,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "TAIPAN LRT STATION"
+        "name": "TAIPAN LRT STATION",
+        "lat": 3.048150062561035,
+        "lon": 101.5902328491211
     },
     "KJ31": {
         "KJ32": {
@@ -36402,7 +36580,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "USJ7 LRT STATION"
+        "name": "USJ7 LRT STATION",
+        "lat": 3.0549559593200684,
+        "lon": 101.59219360351562
     },
     "KJ30": {
         "KJ31": {
@@ -37216,7 +37396,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "SS18 LRT STATION"
+        "name": "SS18 LRT STATION",
+        "lat": 3.0671820640563965,
+        "lon": 101.58594512939453
     },
     "KJ3": {
         "KJ30": {
@@ -38039,7 +38221,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "WANGSA MAJU LRT STATION"
+        "name": "WANGSA MAJU LRT STATION",
+        "lat": 3.205749988555908,
+        "lon": 101.73179626464844
     },
     "KJ29": {
         "KJ3": {
@@ -38871,7 +39055,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "SS15 LRT STATION"
+        "name": "SS15 LRT STATION",
+        "lat": 3.075972080230713,
+        "lon": 101.58598327636719
     },
     "KJ28": {
         "KJ29": {
@@ -39712,7 +39898,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "SUBANG JAYA LRT STATION"
+        "name": "SUBANG JAYA LRT STATION",
+        "lat": 3.084660053253174,
+        "lon": 101.58812713623047
     },
     "KJ27": {
         "KJ28": {
@@ -40562,7 +40750,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "CGC GLENMARIE LRT STATION"
+        "name": "CGC GLENMARIE LRT STATION",
+        "lat": 3.095979928970337,
+        "lon": 101.59044647216797
     },
     "KJ26": {
         "KJ27": {
@@ -41421,7 +41611,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "ARA DAMANSARA LRT STATION"
+        "name": "ARA DAMANSARA LRT STATION",
+        "lat": 3.108643054962158,
+        "lon": 101.58637237548828
     },
     "KJ25": {
         "KJ26": {
@@ -42289,7 +42481,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "LEMBAH SUBANG LRT STATION"
+        "name": "LEMBAH SUBANG LRT STATION",
+        "lat": 3.112093925476074,
+        "lon": 101.59103393554688
     },
     "KJ24": {
         "KJ25": {
@@ -43166,7 +43360,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "KELANA JAYA LRT STATION"
+        "name": "KELANA JAYA LRT STATION",
+        "lat": 3.112751007080078,
+        "lon": 101.60433197021484
     },
     "KJ23": {
         "KJ24": {
@@ -44052,7 +44248,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "TAMAN BAHAGIA LRT STATION"
+        "name": "TAMAN BAHAGIA LRT STATION",
+        "lat": 3.110707998275757,
+        "lon": 101.61279296875
     },
     "KJ22": {
         "KJ23": {
@@ -44947,7 +45145,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "TAMAN PARAMOUNT LRT STATION"
+        "name": "TAMAN PARAMOUNT LRT STATION",
+        "lat": 3.1048049926757812,
+        "lon": 101.6230239868164
     },
     "KJ21": {
         "KJ22": {
@@ -45851,7 +46051,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "ASIA JAYA LRT STATION"
+        "name": "ASIA JAYA LRT STATION",
+        "lat": 3.1043429374694824,
+        "lon": 101.6376953125
     },
     "KJ20": {
         "KJ21": {
@@ -46764,7 +46966,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "TAMAN JAYA LRT STATION"
+        "name": "TAMAN JAYA LRT STATION",
+        "lat": 3.104085922241211,
+        "lon": 101.64524841308594
     },
     "KJ2": {
         "KJ20": {
@@ -47686,7 +47890,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "TAMAN MELATI LRT STATION"
+        "name": "TAMAN MELATI LRT STATION",
+        "lat": 3.219558000564575,
+        "lon": 101.72196960449219
     },
     "KJ19": {
         "KJ2": {
@@ -48617,7 +48823,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "KL GATEWAY UNIVERSITY LRT STATION"
+        "name": "KL GATEWAY UNIVERSITY LRT STATION",
+        "lat": 3.1145598888397217,
+        "lon": 101.66168212890625
     },
     "KJ18": {
         "KJ19": {
@@ -49557,7 +49765,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "KERINCHI LRT STATION"
+        "name": "KERINCHI LRT STATION",
+        "lat": 3.1155059337615967,
+        "lon": 101.66857147216797
     },
     "KJ17": {
         "KJ18": {
@@ -50506,7 +50716,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "ABDULLAH HUKUM LRT STATION"
+        "name": "ABDULLAH HUKUM LRT STATION",
+        "lat": 3.1187350749969482,
+        "lon": 101.67289733886719
     },
     "KJ16": {
         "KJ17": {
@@ -51464,7 +51676,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "BANK RAKYAT BANGSAR LRT STATION"
+        "name": "BANK RAKYAT BANGSAR LRT STATION",
+        "lat": 3.1275880336761475,
+        "lon": 101.67906188964844
     },
     "KJ15": {
         "KJ16": {
@@ -52431,7 +52645,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "KL SENTRAL LRT STATION"
+        "name": "KL SENTRAL LRT STATION",
+        "lat": 3.1344621181488037,
+        "lon": 101.68704223632812
     },
     "KJ14": {
         "KJ15": {
@@ -53407,7 +53623,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "PASAR SENI LRT STATION"
+        "name": "PASAR SENI LRT STATION",
+        "lat": 3.142530918121338,
+        "lon": 101.69538879394531
     },
     "KJ12": {
         "KJ14": {
@@ -54392,7 +54610,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "DANG WANGI LRT STATION"
+        "name": "DANG WANGI LRT STATION",
+        "lat": 3.1569418907165527,
+        "lon": 101.70197296142578
     },
     "KJ11": {
         "KJ12": {
@@ -55386,7 +55606,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "KAMPUNG BARU LRT STATION"
+        "name": "KAMPUNG BARU LRT STATION",
+        "lat": 3.1613309383392334,
+        "lon": 101.70668029785156
     },
     "KJ10": {
         "KJ11": {
@@ -56389,7 +56611,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "KLCC LRT STATION"
+        "name": "KLCC LRT STATION",
+        "lat": 3.158935070037842,
+        "lon": 101.71328735351562
     },
     "KJ1": {
         "KJ10": {
@@ -57401,7 +57625,9 @@
             }
         },
         "line": "Kelana Jaya Line",
-        "name": "GOMBAK LRT STATION"
+        "name": "GOMBAK LRT STATION",
+        "lat": 3.2312090396881104,
+        "lon": 101.72437286376953
     },
     "BRT7": {
         "KJ1": {
@@ -58422,7 +58648,9 @@
             }
         },
         "line": "Sunway Line",
-        "name": "USJ7 BRT STATION"
+        "name": "USJ7 BRT STATION",
+        "lat": 3.0549440383911133,
+        "lon": 101.59220123291016
     },
     "BRT6": {
         "BRT7": {
@@ -59452,7 +59680,9 @@
             }
         },
         "line": "Sunway Line",
-        "name": "SOUTH QUAY-USJ 1 BRT STATION"
+        "name": "SOUTH QUAY-USJ 1 BRT STATION",
+        "lat": 3.0615010261535645,
+        "lon": 101.59674835205078
     },
     "BRT5": {
         "BRT6": {
@@ -60491,7 +60721,9 @@
             }
         },
         "line": "Sunway Line",
-        "name": "SUNU-MONASH BRT STATION"
+        "name": "SUNU-MONASH BRT STATION",
+        "lat": 3.0651700496673584,
+        "lon": 101.60154724121094
     },
     "BRT4": {
         "BRT5": {
@@ -61539,7 +61771,9 @@
             }
         },
         "line": "Sunway Line",
-        "name": "SUNMED BRT STATION"
+        "name": "SUNMED BRT STATION",
+        "lat": 3.065700054168701,
+        "lon": 101.60858154296875
     },
     "BRT3": {
         "BRT4": {
@@ -62596,7 +62830,9 @@
             }
         },
         "line": "Sunway Line",
-        "name": "SUNWAY LAGOON BRT STATION"
+        "name": "SUNWAY LAGOON BRT STATION",
+        "lat": 3.0707600116729736,
+        "lon": 101.61055755615234
     },
     "BRT2": {
         "BRT3": {
@@ -63662,7 +63898,9 @@
             }
         },
         "line": "Sunway Line",
-        "name": "MENTARI BRT STATION"
+        "name": "MENTARI BRT STATION",
+        "lat": 3.076107978820801,
+        "lon": 101.61005401611328
     },
     "BRT1": {
         "BRT2": {
@@ -64737,6 +64975,8 @@
             }
         },
         "line": "Sunway Line",
-        "name": "SUNWAY-SETIA JAYA BRT STATION"
+        "name": "SUNWAY-SETIA JAYA BRT STATION",
+        "lat": 3.0828280448913574,
+        "lon": 101.61258697509766
     }
 }
