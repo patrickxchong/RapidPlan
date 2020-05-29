@@ -7,68 +7,79 @@ var itemsArray = localStorage.getItem("items")
   ? JSON.parse(localStorage.getItem("items"))
   : [];
 
-var data;
-$.getJSON("/js/data.json", function(json) {
-  data = json;
-  updateCards();
-});
+var request = new XMLHttpRequest();
+request.open('GET', '/js/data.json', true);
 
-$(document).ready(function(e) {
-  $("img[usemap]").rwdImageMaps();
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    if (this.status >= 200 && this.status < 400) {
+      // Success!
+      data = JSON.parse(this.responseText);
+      updateCards();
+    } else {
+      // Error :(
+    }
+  }
+};
 
-  async function submit(e) {
-    e.preventDefault();
-    await submitHandler();
+request.send();
+request = null;
+
+
+
+async function submit(e) {
+  e.preventDefault();
+  await submitHandler();
+}
+
+async function submitHandler() {
+  let from = document.getElementById("from").value;
+  let to = document.getElementById("to").value;
+  if (to == "" || from == "") {
+    alert("You missed a field!");
+    return PromiseRejectionEvent();
   }
 
-  async function submitHandler() {
-    let from = document.getElementById("from").value;
-    let to = document.getElementById("to").value;
-    if (to == "" || from == "") {
-      alert("You missed a field!");
-      return PromiseRejectionEvent();
+  try {
+    for (const [key, value] of Object.entries(data)) {
+      if (filter(value["name"], from)) {
+        from = key;
+        break;
+      }
+    }
+    for (const [key, value] of Object.entries(data)) {
+      if (filter(value["name"], to)) {
+        to = key;
+        break;
+      }
+    }
+    if (to.length > 5) {
+      throw `${to} Location not found :(`;
+    }
+    if (from.length > 5) {
+      throw `${from} not found :(`;
     }
 
-    try {
-      for (const [key, value] of Object.entries(data)) {
-        if (filter(value["name"], from)) {
-          from = key;
-          break;
-        }
-      }
-      for (const [key, value] of Object.entries(data)) {
-        if (filter(value["name"], to)) {
-          to = key;
-          break;
-        }
-      }
-      if (to.length > 5) {
-        throw `${to} Location not found :(`;
-      }
-      if (from.length > 5) {
-        throw `${from} not found :(`;
-      }
+    itemsArray.unshift({ to, from });
+    if (itemsArray.length > 9) {
+      itemsArray.pop();
+    }
+    localStorage.setItem("items", JSON.stringify(itemsArray));
 
-      itemsArray.unshift({ to, from });
-      if (itemsArray.length > 9) {
-        itemsArray.pop();
-      }
-      localStorage.setItem("items", JSON.stringify(itemsArray));
-
-      updateCards();
-    } catch (e) {
-      document.getElementById("app").innerHTML = `
+    updateCards();
+  } catch (e) {
+    document.getElementById("app").innerHTML = `
       <p>Something wrong happened!</p>
       <p>${e}</p>`;
-      throw e;
-    }
+    throw e;
   }
+}
 
-  let form = document.getElementsByTagName("form")[0];
+let form = document.getElementsByTagName("form")[0];
 
-  // attach event listener
-  form.addEventListener("submit", submit, true);
-});
+// attach event listener
+form.addEventListener("submit", submit, true);
+
 
 function updateCards() {
   let color = [
@@ -85,14 +96,14 @@ function updateCards() {
   document.getElementById("app").innerHTML = `
     <section>
       ${itemsArray
-        .map((item, idx) => {
-          let trip;
-          if (item["from"] < item["to"]) {
-            trip = data[item["from"]][item["to"]];
-          } else {
-            trip = data[item["to"]][item["from"]];
-          }
-          return `
+      .map((item, idx) => {
+        let trip;
+        if (item["from"] < item["to"]) {
+          trip = data[item["from"]][item["to"]];
+        } else {
+          trip = data[item["to"]][item["from"]];
+        }
+        return `
         <figure class="card ${color[idx]}">
         <figcaption class="card__caption">
           <h1 class="card__name">
@@ -106,11 +117,11 @@ function updateCards() {
           ${item["to"] + ": " + data[item["to"]]["name"]}
           </h1>
           ${
-            trip["duration"]
-              ? `<h3 class="card__type">
+          trip["duration"]
+            ? `<h3 class="card__type">
             ${trip["duration"]} mins
           </h3>`
-              : ""
+            : ""
           }
           
           <table class="card__stats">
@@ -140,8 +151,8 @@ function updateCards() {
         </figcaption>
       </figure>
           `;
-        })
-        .join("")}
+      })
+      .join("")}
     </section>
     `;
 }
