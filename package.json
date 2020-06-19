@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "serve": "npx cap serve"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^2.2.0",
+    "@capacitor/core": "^2.2.0"
+  }
+}

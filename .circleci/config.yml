@@ -1,0 +1,117 @@
+version: 2
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      - build_yarn
+      # - build_capacitor:
+      #     requires:
+      #       - build_yarn
+      - build_android:
+          requires:
+            - build_yarn
+      - publish-github-release:
+          requires:
+            - build_android
+
+jobs:
+  build_yarn:
+    docker:
+      - image: circleci/node:13.5.0
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-modules-{{ checksum "yarn.lock" }}
+      - run: ls node_modules || yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run: npx cap add android
+      - run: npx cap sync
+      - persist_to_workspace:
+          root: android
+          paths:
+            - ./*
+  build_capacitor:
+    docker:
+      - image: circleci/node:13.5.0
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-modules-{{ checksum "yarn.lock" }}
+      - run: yarn install --frozen-lockfile
+      - run: npx cap add android
+      - run: npx cap sync
+      - persist_to_workspace:
+          root: android
+          paths:
+            - ./*
+
+  build_android:
+    docker:
+      - image: circleci/android:api-29-node
+    environment:
+      JVM_OPTS: -Xmx3200m
+    steps:
+      - checkout
+      - attach_workspace:
+          # Must be absolute path or relative path from working_directory
+          at: android
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-modules-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          key: jars-{{ checksum "android/build.gradle" }}-{{ checksum  "android/build.gradle" }}
+      - run:
+          name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
+          command: sudo chmod +x ./android/gradlew
+      - run:
+          name: Download Dependencies
+          command: cd android && ./gradlew androidDependencies
+      - save_cache:
+          paths:
+            - ~/.gradle
+          key: jars-{{ checksum "android/build.gradle" }}-{{ checksum  "android/build.gradle" }}
+      - run: # https://developer.android.com/studio/build/building-cmdline This creates an APK named module_name-debug.apk in project_name/module_name/build/outputs/apk/
+          name: Build debug APK and release APK 
+          command: |
+            cd android
+            ./gradlew :app:assembleDebug
+            ./gradlew :app:assembleRelease
+            ./gradlew :app:assembleDebugAndroidTest
+      - run:
+          name: Run Tests
+          command: cd android && ./gradlew lint test
+      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+          path: android/app/build/reports
+          destination: reports
+      - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+          path: android/app/build/outputs/apk
+      # - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
+      #     path: android/app/src/main/assets/public
+      - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+          path: android/app/build/test-results
+      - persist_to_workspace:
+          root: android/app/build/outputs
+          paths:
+            - ./apk/*
+
+  publish-github-release:
+    docker:
+      - image: cibuilds/github:0.10
+    steps:
+      - attach_workspace:
+          at: ./android
+      - run:
+          name: "Publish Release on GitHub"
+          command: |
+            mv android/apk/debug/app-debug.apk android/apk
+            mv android/apk/release/app-release-unsigned.apk android/apk
+            ghr -t ${GITHUB_TOKEN} -u ${CIRCLE_PROJECT_USERNAME} -r ${CIRCLE_PROJECT_REPONAME} -c ${CIRCLE_SHA1} -delete ${CIRCLE_BUILD_NUM} ./android/apk/

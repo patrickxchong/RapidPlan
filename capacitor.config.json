@@ -1,0 +1,14 @@
+{
+  "appId": "com.patrickxchong.rapidplan",
+  "appName": "RapidPlan",
+  "bundledWebRuntime": true,
+  "npmClient": "yarn",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "Storage": {}
+  },
+  "cordova": {}
+}

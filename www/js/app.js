@@ -1,30 +1,29 @@
+const Storage = Capacitor.Plugins.Storage;
+
+async function getItem(key) {
+  let { value } = await Storage.get({ key })
+  return value;
+}
+
+async function setItem(key, value) {
+  return await Storage.set({ key, value });
+}
+
 function filter(text, searchString) {
   const regexStr = "(?=.*" + searchString.split(/\,|\s/).join(")(?=.*") + ")";
   const searchRegEx = new RegExp(regexStr, "gi");
   return text.match(searchRegEx) !== null;
 }
-var itemsArray = localStorage.getItem("items")
-  ? JSON.parse(localStorage.getItem("items"))
-  : [];
 
-var request = new XMLHttpRequest();
-request.open('GET', '/js/data.json', true);
+let itemsArray = [];
 
-request.onreadystatechange = function () {
-  if (this.readyState === 4) {
-    if (this.status >= 200 && this.status < 400) {
-      // Success!
-      data = JSON.parse(this.responseText);
-      updateCards();
-    } else {
-      // Error :(
-    }
-  }
-};
-
-request.send();
-request = null;
-
+(async function onload() {
+  let items = await getItem("items")
+  itemsArray = items
+    ? await JSON.parse(items)
+    : [];
+  updateCards();
+})()
 
 
 async function submit(e) {
@@ -64,7 +63,7 @@ async function submitHandler() {
     if (itemsArray.length > 9) {
       itemsArray.pop();
     }
-    localStorage.setItem("items", JSON.stringify(itemsArray));
+    await setItem("items", JSON.stringify(itemsArray));
 
     updateCards();
   } catch (e) {
