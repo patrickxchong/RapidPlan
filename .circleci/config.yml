@@ -21,28 +21,28 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore Node Modules Cache
           keys:
             - yarn-modules-{{ checksum "yarn.lock" }}
       - run: ls node_modules || yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-modules-{{ checksum "yarn.lock" }}
-          paths:
-            - node_modules
       - run: npx cap add android
       - run: npx cap sync
       - persist_to_workspace:
           root: android
           paths:
             - ./*
+      - save_cache:
+          name: Save Node Modules Cache
+          key: yarn-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
   build_capacitor:
     docker:
       - image: circleci/node:13.5.0
     steps:
       - checkout
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore Node Modules Cache
           keys:
             - yarn-modules-{{ checksum "yarn.lock" }}
       - run: yarn install --frozen-lockfile
@@ -64,7 +64,7 @@ jobs:
           # Must be absolute path or relative path from working_directory
           at: android
       - restore_cache:
-          name: Restore Yarn Package Cache
+          name: Restore Node Modules Cache
           keys:
             - yarn-modules-{{ checksum "yarn.lock" }}
       - restore_cache:
@@ -74,7 +74,7 @@ jobs:
           command: sudo chmod +x ./android/gradlew 
       - run:
           name: Download Dependencies
-          command: cd android && ./gradlew androidDependencies
+          command: cd android && ./gradlew androidDependencies --debug 
       - save_cache:
           paths:
             - ~/.gradle
