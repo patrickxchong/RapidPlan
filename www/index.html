@@ -45,8 +45,8 @@
       grid-template-columns: 1fr;
     }
 
-    .grid-media {
-      grid-template-columns: 100px auto;
+    .grid-2-col {
+      grid-template-columns: auto auto;
     }
 
     .grid-justify-start {
@@ -82,11 +82,9 @@
 
 <body>
   <form>
-    <div class="grid grid-media">
+    <div class="grid grid-2-col">
       <label class="mr-30 grid-justify-end">From</label>
       <input class="grid-justify-start" id="from" value="LRT Ampang" />
-    </div>
-    <div class="grid grid-media">
       <label class="mr-30 grid-justify-end">To</label>
       <input class="grid-justify-start" id="to" value="TTDI MRT" />
     </div>
@@ -120,7 +118,7 @@
     </p>
     <p>© 2019-2020 Patrick Chong Jin Hua</p>
   </footer>
-  <script src="/capacitor.js"></script>
+  <script src="/js/capacitor.js"></script>
   <script src="/js/data.js"></script>
   <script src="/js/app.js"></script>
 </body>
