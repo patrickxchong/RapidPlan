@@ -21,6 +21,7 @@
   <link rel="manifest" href="/assets/site.webmanifest" />
   <link rel="stylesheet" href="/css/light.min.css" />
   <link rel="stylesheet" href="/css/card.css" />
+  <link rel="stylesheet" href="/css/autocomplete.css" />
   <style>
     body {
       display: flex;
@@ -81,14 +82,18 @@
 </head>
 
 <body>
-  <form>
+  <form autocomplete="off">
     <div class="grid grid-2-col">
       <label class="mr-30 grid-justify-end">From</label>
-      <input class="grid-justify-start" id="from" value="LRT Ampang" />
+      <div class="autocomplete grid-justify-start">
+        <input id="from" value="LRT Ampang" />
+      </div>
       <label class="mr-30 grid-justify-end">To</label>
-      <input class="grid-justify-start" id="to" value="TTDI MRT" />
+      <div class="autocomplete grid-justify-start">
+        <input id="to" value="TTDI MRT" />
+      </div>
     </div>
-    <label></label>
+    <span></span>
     <button>Submit</button>
   </form>
   <section id="app">
@@ -120,6 +125,8 @@
   </footer>
   <script src="/js/capacitor.js"></script>
   <script src="/js/data.js"></script>
+  <script src="/js/stations.js"></script>
+  <script src="/js/autocomplete.js"></script>
   <script src="/js/app.js"></script>
 </body>
 

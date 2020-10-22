@@ -1,7 +1,7 @@
 const Storage = Capacitor.Plugins.Storage;
 
 async function getItem(key) {
-  let { value } = await Storage.get({ key })
+  let { value } = await Storage.get({ key });
   return value;
 }
 
@@ -9,22 +9,23 @@ async function setItem(key, value) {
   return await Storage.set({ key, value });
 }
 
-function filter(text, searchString) {
-  const regexStr = "(?=.*" + searchString.split(/\,|\s/).join(")(?=.*") + ")";
-  const searchRegEx = new RegExp(regexStr, "gi");
-  return text.match(searchRegEx) !== null;
-}
-
 let itemsArray = [];
 
 (async function onload() {
-  let items = await getItem("items")
+  autocomplete(document.getElementById("from"), stations);
+  autocomplete(document.getElementById("to"), stations);
+  let items = await getItem("items");
   itemsArray = items
     ? await JSON.parse(items)
     : [];
   updateCards();
-})()
+})();
 
+
+let form = document.getElementsByTagName("form")[0];
+
+// attach event listener
+form.addEventListener("submit", submit, true);
 
 async function submit(e) {
   e.preventDefault();
@@ -53,7 +54,7 @@ async function submitHandler() {
       }
     }
     if (to.length > 5) {
-      throw `${to} Location not found :(`;
+      throw `${to} not found :(`;
     }
     if (from.length > 5) {
       throw `${from} not found :(`;
@@ -74,11 +75,11 @@ async function submitHandler() {
   }
 }
 
-let form = document.getElementsByTagName("form")[0];
-
-// attach event listener
-form.addEventListener("submit", submit, true);
-
+function filter(text, searchString) {
+  const regexStr = "(?=.*" + searchString.split(/\,|\s/).join(")(?=.*") + ")";
+  const searchRegEx = new RegExp(regexStr, "gi");
+  return text.match(searchRegEx) !== null;
+}
 
 function updateCards() {
   let color = [
@@ -115,8 +116,7 @@ function updateCards() {
           <h1 class="card__name">
           ${item["to"] + ": " + data[item["to"]]["name"]}
           </h1>
-          ${
-          trip["duration"]
+          ${trip["duration"]
             ? `<h3 class="card__type">
             ${trip["duration"]} mins
           </h3>`
